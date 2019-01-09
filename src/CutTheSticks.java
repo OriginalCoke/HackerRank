@@ -6,6 +6,7 @@ public class CutTheSticks {
         Map<Integer, Integer> map = new HashMap<>();
         for (int a : arr) map.put(a, map.getOrDefault(a, 0) + 1);
         List<Integer> list = new ArrayList<>();
+        //sort map keys
         for (int m : map.keySet()) list.add(m);
         Collections.sort(list);
         int n = list.size();
